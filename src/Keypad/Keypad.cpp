@@ -117,31 +117,31 @@ const char* Keypad::buttonStr(readPin input) {
         return "BTN_UNPRESSED";
 }
 
-Keypad::readPin Keypad::numberedLookup(int buttonNumber) {
+Keypad::readPin Keypad::dtmfLookup(int buttonNumber) {
     switch(buttonNumber) {
-        case 0:
+        case '0':
             return Keypad::BTN_ZERO;
-        case 1:
+        case '1':
             return Keypad::BTN_ONE;
-        case 2:
+        case '2':
             return Keypad::BTN_TWO;
-        case 3:
+        case '3':
             return Keypad::BTN_THREE;
-        case 4:
+        case '4':
             return Keypad::BTN_FOUR;
-        case 5:
+        case '5':
             return Keypad::BTN_FIVE;
-        case 6:
+        case '6':
             return Keypad::BTN_SIX;
-        case 7:
+        case '7':
             return Keypad::BTN_SEVEN;
-        case 8:
+        case '8':
             return Keypad::BTN_EIGHT;
-        case 9:
+        case '9':
             return Keypad::BTN_NINE;
-        case 10:
+        case '*':
             return Keypad::BTN_STOP_CANCEL;
-        case 11:
+        case '#':
             return Keypad::BTN_START;
         default:
             return Keypad::BTN_UNPRESSED;

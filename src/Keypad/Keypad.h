@@ -81,7 +81,7 @@ class Keypad {
      * @param buttonNumber A single digit positive integer
      * @return readPin Struct containing pins matching number button
      */
-    readPin numberedLookup(int buttonNumber);
+    readPin dtmfLookup(int buttonNumber);
 
     /**
      * @brief Get string representation of button pressed for debugging purposes
