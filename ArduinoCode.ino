@@ -131,7 +131,7 @@ void loop() {
             Serial.print(" ");
             Serial.println(smsData.message);
         }
-        i f (onCall == false && (index = strstr(dataBuffer, "RING")) != NULL) {
+        if (onCall == false && (index = strstr(dataBuffer, "RING")) != NULL) {
             index += 4;
             initCall(dataBuffer, sizeof(dataBuffer));
         }
