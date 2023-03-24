@@ -1,3 +1,11 @@
+/**
+ * @file Keypad.h
+ * @brief This file contains the declarations for the Keypad class and button structs.
+ *
+ * The Keypad class provides an interface for reading in button inputs from the microwave keypad.
+ * Constant static structs are declared for easier comparisons to buttons. 
+ */
+
 #ifndef KEYPAD_H
 #define KEYPAD_H
 

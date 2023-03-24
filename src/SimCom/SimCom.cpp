@@ -82,6 +82,8 @@ void SIM7600::initConfig(unsigned long timeout) {
         Serial.println("Checking network registration");
         delay(500);
     }
+    if(millis() - startTime > timeout)
+        Serial.println("Cellular Network Registration timed out");
 }
 
 bool SIM7600::sendSMS(const char* number, const char* msg) {

@@ -6,7 +6,6 @@
  * cellular module. It provides functions to allow the user to send and receive
  * SMS messages, and read GPS data.
  *
- * @author Khanh Hoang
  */
 
 #ifndef SIMCOM_H
